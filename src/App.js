@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Dropdown1 from './components/Dropdown';
 
 function App() {
+
+  const arr2 = [
+
+		{name:"gaurav",
+		value:1
+		},
+		{
+			name:"mohan",
+			value:2
+		},
+		{
+			name:"sohan",
+			value:3
+		},
+		{
+			name:"rajesh",
+			value:4
+		},
+		{
+			name:"ramesh",
+			value:5
+		}
+	];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Question 3</h1>
+      <div id="q3">
+
+      </div>
+      <Dropdown1 arr2={arr2}/>
     </div>
   );
 }
